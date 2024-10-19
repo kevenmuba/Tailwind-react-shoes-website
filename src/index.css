@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Nunito Variable", sans-serif;
+  }
+}
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
+@layer utilities {
+  .btn-press-anim {
+    @apply transition hover:scale-75;
+  }
+}
